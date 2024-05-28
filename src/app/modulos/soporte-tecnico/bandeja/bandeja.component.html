@@ -1,0 +1,54 @@
+<div class="container-fluid">
+  <h2 class="titulo">Nuevo Requerimiento de Soporte Técnico</h2>
+
+  <form onsubmit="enviarRequerimiento(event)">
+    <div class="form-group">
+      <label for="observaciones">Observaciones:</label>
+      <textarea class="form-control" id="observaciones" rows="5" maxlength="500"></textarea>
+      <small id="observacionesHelp" class="form-text text-muted">Máximo 500 palabras.</small>
+    </div>
+
+    <button type="submit" class="btn btn-primary boton-submit">Enviar Requerimiento</button>
+  </form>
+</div>
+
+<script>
+  function enviarRequerimiento(event) {
+    event.preventDefault();
+    // Muestra la ventana emergente con un botón "Aceptar"
+    swal({
+      title: "Requerimiento Enviado",
+      text: "# ticket: 0000001prueba",
+      icon: "success",
+      button: {
+        text: "Aceptar",
+        className: "btn btn-primary"
+      },
+    });
+    // Puedes agregar aquí el código para enviar el requerimiento al servidor
+  }
+</script>
+
+<style>
+  /* Estilos adicionales para hacer responsive */
+  @media (max-width: 576px) {
+    .container-fluid {
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .titulo {
+      font-size: 24px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .boton-submit {
+      width: 100%;
+    }
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>

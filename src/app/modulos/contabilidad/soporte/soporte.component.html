@@ -1,0 +1,59 @@
+<div class="container-fluid">
+  <h2 class="titulo">Contabilidad</h2>
+
+  <br>
+
+  <h3 class="subtitulo">Nuevo Registro</h3>
+
+  <br>
+
+  <div class="row mb-3">
+      <div class="col-md-6">
+          <label class="label-input" for="idCliente">ID Cliente:</label>
+          <input type="text" id="idCliente" class="form-control">
+      </div>
+
+      <div class="col-md-6">
+          <label class="label-input" for="valorFacturado">Valor Facturado:</label>
+          <input type="text" id="valorFacturado" class="form-control">
+      </div>
+  </div>
+
+  <div class="row mb-3">
+      <div class="col-md-6">
+          <label for="metodoPago">Método de Pago:</label>
+          <select id="metodoPago" class="form-select boton-lista">
+              <option value="efectivo">Efectivo</option>
+              <option value="cheque">Cheque</option>
+              <option value="consignacion">Consignación Bancaria</option>
+              <option value="transferencia">Transferencia</option>
+          </select>
+      </div>
+
+      <div class="col-md-6">
+          <label class="label-input" for="fechaPago">Fecha de Pago:</label>
+          <input type="date" id="fechaPago" class="form-control">
+      </div>
+  </div>
+
+  <div class="row mb-3">
+      <div class="col-md-12">
+          <label class="label-input" for="archivo">Cargar Archivo:</label>
+          <input type="file" id="archivo" class="form-control">
+      </div>
+  </div>
+
+  <div class="row mb-3">
+      <div class="col-md-12">
+          <button class="btn btn-primary boton-cargar-archivo">Cargar Archivo</button>
+      </div>
+  </div>
+
+  <div class="row mb-3">
+      <div class="col-md-12">
+          <button class="btn btn-primary boton-registrar">Registrar</button>
+      </div>
+  </div>
+
+  <br><br>
+</div>
