@@ -1,35 +1,35 @@
 <div class="container-fluid">
     <h2 class="titulo">Registro de Empleados</h2>
 
-    <form>
+    <form action="ingreso.php" method="POST">
         <div class="row mt-1">
             <div class="col-md-6 mb-3">
                 <label class="label-input" for="nombre">Nombre:</label>
-                <input type="text" id="nombre" class="form-control">
+                <input type="text" id="nombre" name="nombre" class="form-control">
             </div>
 
             <div class="col-md-6 mb-3">
                 <label class="label-input" for="apellido">Apellido:</label>
-                <input type="text" id="apellido" class="form-control">
+                <input type="text" id="apellido" name="apellido" class="form-control">
             </div>
         </div>
 
         <div class="row mt-1">
             <div class="col-md-6 mb-3">
                 <label class="label-input" for="cedula">Cédula:</label>
-                <input type="text" id="cedula" class="form-control">
+                <input type="text" id="cedula" name="cedula" class="form-control">
             </div>
 
             <div class="col-md-6 mb-3">
                 <label class="label-input" for="telefono">Teléfono:</label>
-                <input type="text" id="telefono" class="form-control">
+                <input type="text" id="telefono" name="telefono" class="form-control">
             </div>
         </div>
 
         <div class="row mt-1">
             <div class="col-md-4 mb-3">
                 <label class="label-input" for="sede">Sede:</label>
-                <select id="sede" class="form-control">
+                <select id="sede" name="sede" class="form-control">
                     <option value="sedePrincipal">Sede Principal</option>
                     <option value="sedeNorte">Sede Norte</option>
                     <option value="sedeSur">Sede Sur</option>
@@ -38,7 +38,7 @@
 
             <div class="col-md-4 mb-3">
                 <label class="label-input" for="puesto">Puesto:</label>
-                <select id="puesto" class="form-control">
+                <select id="puesto" name="puesto" class="form-control">
                     <option value="transporte">Transporte</option>
                     <option value="bodega">Bodega</option>
                     <option value="administrativo">Administrativo</option>
@@ -51,31 +51,31 @@
 
             <div class="col-md-4 mb-3">
                 <label class="label-input" for="salario">Salario:</label>
-                <input type="number" id="salario" class="form-control">
+                <input type="number" id="salario" name="salario" class="form-control">
             </div>
         </div>
 
         <div class="row mt-1">
             <div class="col-md-4 mb-3">
                 <label class="label-input" for="fechaAfiliacion">Fecha de Afiliación:</label>
-                <input type="date" id="fechaAfiliacion" class="form-control">
+                <input type="date" id="fechaAfiliacion" name="fechaAfiliacion" class="form-control">
             </div>
 
             <div class="col-md-4 mb-3">
                 <label class="label-input" for="registroEPS">Registro EPS:</label>
-                <input type="text" id="registroEPS" class="form-control">
+                <input type="text" id="registroEPS" name="registroEPS" class="form-control">
             </div>
 
             <div class="col-md-4 mb-3">
                 <label class="label-input" for="registroARL">Registro ARL:</label>
-                <input type="text" id="registroARL" class="form-control">
+                <input type="text" id="registroARL" name="registroARL" class="form-control">
             </div>
         </div>
 
         <div class="row mt-1">
             <div class="col-md-6 mb-3">
                 <label class="label-input" for="registroPension">Registro Fondo de Pensiones:</label>
-                <input type="text" id="registroPension" class="form-control">
+                <input type="text" id="registroPension"  name="registroPension" class="form-control">
             </div>
         </div>
 

@@ -3,27 +3,27 @@
     <form id="cotizacionForm">
         <div class=" h6 form-group">
             <label for="origen">Origen:</label>
-            <input type="text" class=" border form-control" id="origen" placeholder="Ciudad de origen" required>
+            <input type="text" class=" border form-control" id="origen" name="origen" placeholder="Ciudad de origen" required>
         </div>
         <br>
         <div class=" h6 form-group">
             <label for="destino">Destino:</label>
-            <input type="text" class=" border form-control" id="destino" placeholder="Ciudad de destino" required>
+            <input type="text" class=" border form-control" id="destino" name="destino" placeholder="Ciudad de destino" required>
         </div>
         <br>
         <div class=" h6 form-group">
             <label for="distancia">Distancia (en kilómetros - aplica solo en misma ciudad):</label>
-            <input type="number" class=" border form-control" id="distancia" placeholder="Ingrese la distancia" required>
+            <input type="number" class=" border form-control" id="distancia" name="distancia" placeholder="Ingrese la distancia" required>
         </div>
         <br>
         <div class=" h6 form-group">
             <label for="peso">Peso (en kilogramos):</label>
-            <input type="number" class=" border form-control" id="peso" placeholder="Ingrese el peso" required>
+            <input type="number" class=" border form-control" id="peso" name="peso" placeholder="Ingrese el peso" required>
         </div>
         <br>
         <div class=" h6 col-md-4">
             <label class="label-input" for="TipoMercancia">Tipo de Mercancía:</label>
-            <select id="TipoMercancia" class="form-control">
+            <select id="TipoMercancia" name="TipoMercancia" class="form-control">
                 <option value="mercanciaPremium">Mercancía Premium</option>
                 <option value="mercanciaRegular">Mercancía Regular</option>
                 <option value="mayor25kg">Mercancía Mayor a 25 kg</option>

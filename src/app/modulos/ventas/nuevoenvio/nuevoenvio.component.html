@@ -32,7 +32,7 @@
                 <label class="label-input" for="NombreRecibe">Nombre:</label>
                 <input type="text" class="form-control mb-3" id="NombreRecibe" name="NombreRecibe">
                 <label for="tipoIdentificacionRecibe">Tipo de Identificación:</label>
-                <select id="tipoIdentificacionRecibe" class="form-contarol boton-lista azul mb-3" name="tipoIdentificacionRecibe">
+                <select id="tipoIdentificacionRecibe"  class="form-control boton-lista azul mb-3" name="tipoIdentificacionRecibe">
                     <option value="cedula">Cédula</option>
                     <option value="registroEspecial">Registro Especial</option>
                     <option value="pasaporte">Pasaporte</option>
@@ -62,6 +62,8 @@
         </div>
         <div class="col-md-3">
             <button type = "submit"  class="btn btn-primary boton-lista mb-3">Generar</button>
+            <br>
+            
             <button type = "button" class="btn btn-secondary boton-lista" onclick="imprimirPagina()">Imprimir</button>     
         </div>
     </div>
